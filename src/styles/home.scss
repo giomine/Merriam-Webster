@@ -2,46 +2,52 @@
 
 main {
   .hero {
+    height: 80vh;
+    @include flex-center(column, center);
+    justify-content: space-evenly;
     h1{
-      width: 100%;
-    }
-    @media (min-width: 800px){
-      margin-top: 10vh;
-    }
-  }
-  .wordofday {
-    margin-bottom: 50px;
-  }
-  .wordofdayp{
-    margin: 0 auto;
-    @media (min-width: 800px){
-      max-width: 50vw;
+      margin: 5vh 0 10vh;
     }
   }
 }
 
 .homebutton {
-  background-color: $secondary;
-  padding: 10px;
-  margin: 5px 20px;
+  background-color: lighten($primary, 10%);
+  padding: 20px;
+  margin: 5px;
   @media (min-width: 800px){
     padding: 20px 30px;
     margin: 40px;
   }
   display: inline-block;
-  font-size: medium;
-  border: 1px solid #000;
   border-radius: 8px;
   text-decoration: none;
-  color: #000;
+  color: $black;
   &:hover {
     background-color: lighten($secondary, 10%);
+    background-color: $primary;
     transform: scale(1.05);
     transition: 0.1s ease-in-out;
+  }
+}
+.homebutton.two{
+  background-color: $blue;
+    &:hover {
+      background-color: darken($blue, 10%);
   }
 }
 
 
 .wordofday-container{
-  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 60vw;
+  max-width: 550px;
+  .wordofday{
+    .wordofdayp{
+      margin: 5px 0;
+    }
+    .wordofdayp.two{
+      font-style: italic;
+    }
+  }
 }

@@ -6,7 +6,7 @@
 
 body{
   margin: 0;
-  background-color: $quaternary;
+  background-color: lighten($quaternary, 5%);
 }
 
 h1{
@@ -94,8 +94,10 @@ main{
 
   .word-container{
     @include border;
+    @include flex-center(column, center);
     min-height: 40vh;
     margin-bottom: 20px;
+    background-color: lighten($primary, 10%);
     @media (min-width: 800px){
       width: 50vw;
       max-width: 700px;
@@ -103,7 +105,8 @@ main{
     }
   }
   .image-container{
-    background-color: $quaternary;
+    background-color: lighten($primary, 10%);
+    background: none;
     margin-bottom: 20px;
     @media(min-width: 800px){
       margin-right: 10vw;
@@ -167,6 +170,10 @@ main{
     max-width: 100vw;
     @media(min-width: 800px){
       flex-direction: column;
+    }
+    .word-container{
+      background-color: lightblue;
+
     }
   }
 }

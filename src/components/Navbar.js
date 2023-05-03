@@ -7,14 +7,14 @@ const PageNavbar = () => {
   return (
     <Navbar navbar-expand='lg'>  
       <Container>
-        <Navbar.Brand to='/' as={Link}>🏘️</Navbar.Brand>
+        <Navbar.Brand to='/' as={Link}></Navbar.Brand>
         <Navbar.Collapse id='definitions-nav'>
           <Nav>
-            <button>
-              <Nav.Link to='/medical' as={Link}>Medical ⚕️</Nav.Link>
+            <button className='one'>
+              <Nav.Link to='/medical' as={Link}>Medical</Nav.Link>
             </button>
-            <button>
-              <Nav.Link to='/school' as={Link}>School 🏫</Nav.Link>
+            <button className='two'>
+              <Nav.Link to='/school' as={Link}>School</Nav.Link>
             </button>
           </Nav>
         </Navbar.Collapse>

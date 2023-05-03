@@ -1,16 +1,13 @@
 @import './variables.scss';
 
-// @media (max-width: 600px) {
-//   a {
-//     font-size: xx-small;
-//   }
-// }
-
+nav {
+  height: 60px;
+}
 .navbar {
   box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.2);
-  // margin: 0 5px 10px 5px;
   padding: 10px;
-  background-color: $primary;
+  box-shadow: none;
+  border-bottom: 1px solid lighten($blue, 10%);
   a {
     text-decoration: none;
     font-family: 'PT Sans', sans-serif;
@@ -20,6 +17,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 90vw;
+    margin: 0 auto;
     @media (min-width: 800px){
       width: 80vw;
       margin: 0 auto;
@@ -28,25 +27,28 @@
 }
 
 .navbar-nav {
-  // width: 25vw;
-  // display: flex;
-  // justify-content: space-between;
   button {
-    background-color: $primary;
-    margin: 1px;
-    // border: 0.8px solid rgba(0, 0, 0, 0.2);
+    background: none;
     border: none;
-    border-radius: 3px;
     font-size: 1rem;
     padding: 10px 15px;
     text-align: center;
     &:hover {
-      background-color: darken($primary, 10%);
+      border-bottom: 2px solid darken($primary, 10%);
+    }
+  }
+  button.two{
+    &:hover {
+      // border-bottom: 1px solid lighten($blue, 10%);
+      border-bottom: 2px solid $blue;
     }
   }
 }
 
-// #definitions-nax {
-//   display: flex;
-//   justify-content: space-between;
-// }
+.navbar-brand{
+  background-image: url('../images/merriam.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+}
