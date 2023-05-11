@@ -1,5 +1,7 @@
 # GA Project 2 - Reactathon
 
+![dictionaries](./src/images/ReadMe_images/dictionary.png)
+
 # Contents
 - [Description](#description)
 - [Technology used](#technologies-used)
@@ -112,9 +114,6 @@ Wins include: <br>
 * Much more confident now using APIs with state. This has given me lots of ideas for more projects that I would love to make!
 * Learned how valuable git is in teamwork - being able to work separately and push to different branches is fantastic for productivity.
 * I learned how important it is to ensure time is managed well in a team. Tasks that may be very quick solo can take much longer than anticipated when pair-coding, and this must be accounted for in the planning stage. In hindsight the workload was split very unevenly and it was extremely exhausting having only one evening to get all of that done! However I really enjoyed this project and I am proud that we made it to the finish line with all of our goals reached :) 
-
-<!-- Finishing an already half-completed navbar vs completing a full page including api functionality and css are not equal tasks in terms of workload, so it would have helped a lot if we thought more carefully about what tasks involved rather than looking at it as 1 task each.<br>
-My takeaway from this is that I shouldn’t be afraid to be more assertive, and I believe this will make a huge difference in future team working situations. -->
 
 
 # Bugs
