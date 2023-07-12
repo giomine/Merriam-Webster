@@ -125,7 +125,9 @@ main{
     }
     .icons{
       width: 30px;
-      cursor: pointer;
+      &:not(img){
+        cursor: pointer;
+      }
     }
   }
 
